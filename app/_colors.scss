@@ -1,0 +1,52 @@
+$white : #fff;
+$black : #000;
+$navyblue : #2D3F54;
+$greenblue : #73CAC7;
+$gray : #E8E8E8;
+$darkgray : #646464;
+$bgray : #979797;
+$lightgray : #F1F5FA;
+$yellow : #FCDE76;
+
+
+.color{
+    &-yellow{
+        color:$yellow;
+    }
+    &-greenblue{
+        color:$greenblue;
+    }
+    &-gray{
+        color:$gray;
+    }
+    &-bgray{
+        color:$bgray;
+    }
+    &-darkgray{
+        color:$darkgray;
+    }
+    &-lightgray{
+        color:$lightgray;
+    }
+}
+
+.bg{
+    &-yellow{
+        background-color:$yellow;
+    }
+    &-greenblue{
+        background-color:$greenblue;
+    }
+    &-gray{
+        background-color:$gray;
+    }
+    &-bgray{
+        background-color:$bgray;
+    }
+    &-darkgray{
+        background-color:$darkgray;
+    }
+    &-lightgray{
+        background-color:$lightgray;
+    }
+}
