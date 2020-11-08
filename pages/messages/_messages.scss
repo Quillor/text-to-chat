@@ -1,0 +1,272 @@
+@media (max-width: 768px){
+    .desktop-nav{
+        display:none;
+    }
+}
+#messages-page{
+  
+    overflow: hidden;
+    
+    .messages-page-inner{
+        background: $white;
+        border: 1px solid #E8E8E8;
+        box-shadow: 0px 0px 10px #D0DFF0;
+       
+
+        .messages-col-block{
+            max-height: 85vh;
+            //min-height: 80vh;
+            height: 100vh;
+
+            @media (max-width: 768px){
+                margin-bottom: 100px;
+
+                &.main-inbox-block-list{
+                    
+                    .inbox-options{
+                        -ms-flex: 1 1 auto!important;
+                        flex: 1 1 auto!important;
+                        text-align: center;
+                    }
+                }
+            }
+
+            
+        }
+
+        .inbox-options{
+            background-color: $gray;
+            color:$darkgray;
+            font-size: 11px;
+            padding: 3px 9px;
+            border-radius: 7px;
+            cursor: pointer;
+            &.active{
+                background-color: $greenblue;
+                color:$white;
+            }
+        }
+        .inbox-messages-block{
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: 100%;
+            padding-bottom: 50px;
+            @media (min-width: 769px){
+                padding-bottom: 200px;
+            }
+            @media (max-width: 768px){
+                height: 70%;
+            }
+            .inbox-messages-block-list {
+                border-bottom:1px solid $gray;
+                .inbox-title{
+                    font-size: 12px;
+                    color:$black;
+                    font-weight: bold;
+                    margin-bottom: 1px;
+                }
+                .inbox-date{
+                    font-size: 8px;
+                    color:$bgray;
+                    margin-bottom: 1px;
+                }
+                .inbox-excerpt-content{
+                    font-size: 12px;
+                    color:$black;
+                }
+    
+              
+                &.active{
+                    background-color: $lightgray;
+                    .inbox-title{
+                        color:$darkgray;
+                    }
+                    .inbox-date{
+                        color:$bgray;
+                    }
+                    .inbox-excerpt-content{
+                        color:$bgray;
+                    }
+                }
+                &.read{
+                    .inbox-title{
+                        color:$darkgray;
+                    }
+                    .inbox-date{
+                        color:$bgray;
+                    }
+                    .inbox-excerpt-content{
+                        color:$bgray;
+                    }
+                }
+            }
+        }
+
+ 
+
+    }
+    
+    .floating-message-block{
+        width: 100%;
+        background: $white;
+        padding-top: 5px;
+        padding-left: 80%;
+        @media (min-width: 768px){
+            position: absolute;
+            bottom: -80px;
+            padding-left: 80%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        
+
+        .floating-message{
+            background-color: $greenblue;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            box-shadow: 0px 0px 10px #D0DFF0;
+            cursor: pointer;
+        }
+    }
+    .box-icon{
+        border-radius: 7px;
+        background-color: $gray;
+        padding: 3px 6px 1px;
+        cursor: pointer;
+        i{
+            font-size: 24px;
+            color:$bgray;
+        }
+    }
+    .message-body{
+        background-color: $lightgray;
+        padding: 15px 0px 50px;
+        overflow-y: auto;
+        max-height: 76%;
+
+        .message-receive{
+            .message-inbox-body{
+                background: $white;
+                box-shadow: 0px 0px 10px #D0DFF0;
+                border-radius: 25px;
+                padding: 15px 25px 5px;
+                margin-bottom: 5px;
+                p{
+                    font-size: 12px;
+                    line-height: 18px;
+                    color:$bgray;
+                }
+                
+            }
+            .date{
+                font-size: 8px;
+                line-height: 18px;
+                color:$bgray;
+            }
+        }
+        .message-response{
+            .message-inbox-body{
+                background: $navyblue;
+                box-shadow: 0px 0px 10px #D0DFF0;
+                border-radius: 25px;
+                padding: 15px 25px 5px;
+                margin-bottom: 5px;
+                p{
+                    font-size: 12px;
+                    line-height: 18px;
+                    color:$white;
+                }
+                
+            }
+            .date{
+                font-size: 8px;
+                line-height: 18px;
+                color:$bgray;
+                text-align: right;
+            }
+        }
+        
+    }
+    .send-message{
+        textarea{
+            border: 1px solid #A0A0A0;
+            width: 100%;
+            font-size: 12px;
+            font-family: Montserrat;
+            border-radius: 4px;
+            color:$bgray;
+            padding: 8px;
+            color:$bgray;
+        }
+        .send-message-button{
+            display: flex;
+            justify-content: flex-end;
+            button{
+                border-radius: 4px;
+                background-color: $greenblue;
+                border: none;
+                color:$white;
+                font-weight: bold;
+                font-size: 12px;
+                padding: 5px 10px;
+                i{
+                    color:$white;
+                }
+            }
+        }
+
+    }
+    .message-details-block{
+        .edit-message-block{
+            display: flex;
+            justify-content: flex-end;
+            .edit-message-details{
+                font-size: 12px;
+                border: none;
+                padding: 5px 25px 5px 25px;
+                border-radius: 7px;
+                cursor: pointer;
+                color: $darkgray;
+                background-color: $gray;
+                margin:10px 0px 30px;
+            }
+        }
+
+        .message-owner-details{
+            .meta-message-details{
+                
+                label{
+                    font-size: 15px;
+                    line-height: 18px;
+                    color:$bgray;
+                    display: block;
+                }
+                p{
+                    padding: 0px 10px;
+                    color: $black;
+                    font-size: 18px;
+                    i{
+                        color:$bgray;
+                        padding-right: 10px;
+                    }
+                }
+                textarea{
+                    border: 1px solid #A0A0A0;
+                    width: 100%;
+                    font-size: 12px;
+                    font-family: Montserrat;
+                    border-radius: 4px;
+                    color:$bgray;
+                    padding: 8px;
+                    color:$bgray;
+                }
+            }
+        }
+    }
+
+}

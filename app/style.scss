@@ -1,17 +1,21 @@
-
-# App
-# import _colors.scss
-# import _type.scss
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
 
 
-# Components
-## import _message.scss
+// App
+@import "../app/colors";
 
 
-# Layouts
-## _top-navigation.scss
+// Components
 
-# Pages
-## Import _contacts.scss
-## Import _messages.scss
-## Import _settings.scss 
+
+
+// Layouts
+@import "../layout/navigation/navigation";
+
+// Pages
+@import "../pages/messages/messages";
+// Import _contacts.scss
+// Import _messages.scss
+// Import _settings.scss 
+
+@import "../pages/settings/settings";

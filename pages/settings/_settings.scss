@@ -1,0 +1,49 @@
+body {
+    background-color: $lightgray !important;
+
+    & *{
+        font-family: 'Montserrat', sans-serif;
+    }
+    .fa, .fab, .fad, .fal, .far, .fas{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    .border{
+        border-color:$gray !important;
+
+        @media (min-width: 768px){
+            &-md{
+                border: 1px  solid $gray;
+                &-right{
+                    border-right: 1px  solid $gray;
+                }
+                &-left{
+                    border-left: 1px  solid $gray;
+                }
+                &-bottom{
+                    border-bottom: 1px  solid $gray;
+                }
+                &-top{
+                    border-top: 1px  solid $gray;
+                }
+            }
+        }
+    }
+
+    input{
+        &.form-control{
+            color:$darkgray;
+            font-size: 12px;
+            &:focus{
+                box-shadow: 0 0 0 0rem #f0f0f040;
+            }
+        }
+    }
+    .small{
+        font-size: 50%;
+    }
+}
+
