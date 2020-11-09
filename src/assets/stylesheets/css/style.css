@@ -23,6 +23,10 @@
   color: #F1F5FA;
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
 .bg-yellow {
   background-color: #FCDE76;
 }
@@ -50,6 +54,7 @@
 .navbar li a {
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
+  cursor: pointer;
 }
 
 .navbar li a:hover {
@@ -75,14 +80,14 @@ nav.desktop-nav ul li a {
   font-weight: 200;
 }
 
-nav.desktop-nav ul li a.is-btn {
+nav.desktop-nav ul li a.active {
   background: #73CAC7;
   border-radius: 37px;
   min-width: 150px;
   text-align: center;
 }
 
-nav.desktop-nav ul li a.is-btn:hover {
+nav.desktop-nav ul li a.active:hover {
   color: #73CAC7;
   background-color: #fff;
 }
@@ -446,8 +451,189 @@ nav.desktop-nav .navbar-toggler-icon {
   color: #979797;
 }
 
+#contact-page .contact-page-inner {
+  background: #F1F5FA;
+  border: 1px solid #E8E8E8;
+  -webkit-box-shadow: 0px 0px 10px #D0DFF0;
+          box-shadow: 0px 0px 10px #D0DFF0;
+}
+
+#contact-page .contact-desktop {
+  max-height: 85vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#contact-page .contact-desktop .contact-activity-option .contact-options {
+  background-color: #E8E8E8;
+  color: #646464;
+  font-size: 11px;
+  padding: 5px 9px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#contact-page .contact-desktop .contact-activity-option .contact-options.active {
+  background-color: #73CAC7;
+  color: #fff;
+}
+
+#contact-page .contact-desktop .contact-add-item {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+#contact-page .contact-desktop table tr th {
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+  color: #646464;
+  vertical-align: middle;
+  padding: 10px 15px 10px 10px;
+}
+
+#contact-page .contact-desktop table tr th select {
+  font-weight: 300;
+  font-size: 12px;
+  background-color: #E8E8E8;
+  color: #979797;
+  font-weight: 500;
+}
+
+#contact-page .contact-desktop table tr th i {
+  color: #979797;
+  background-color: #E8E8E8;
+  padding: 2px 4px;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact-page .contact-desktop table tbody tr {
+  border-bottom: 1px solid #E8E8E8;
+}
+
+#contact-page .contact-desktop table tbody tr:first-child {
+  border-top: 1px solid #E8E8E8;
+}
+
+#contact-page .contact-desktop table tbody tr td {
+  font-size: 12px;
+  color: #646464;
+}
+
+#contact-page .contact-desktop table tbody tr td a {
+  color: #646464;
+}
+
+#contact-page .contact-mobile .contact-activity-option .contact-options {
+  background-color: #E8E8E8;
+  color: #646464;
+  font-size: 11px;
+  padding: 5px 9px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 5px 0px;
+  text-align: center;
+}
+
+#contact-page .contact-mobile .contact-activity-option .contact-options.active {
+  background-color: #73CAC7;
+  color: #fff;
+}
+
+#contact-page .contact-mobile select {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  background-color: #E8E8E8;
+  color: #979797;
+}
+
+#contact-page .contact-mobile .contact-list-box {
+  background: #fff;
+  /* Border/1 */
+  margin: 20px;
+  padding: 10px 10px 20px;
+  border: 1px solid #E8E8E8;
+  -webkit-box-shadow: 0px 0px 10px #D0DFF0;
+          box-shadow: 0px 0px 10px #D0DFF0;
+  border-radius: 12px;
+}
+
+#contact-page .contact-mobile .contact-list-box .name {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 18px;
+  color: #646464;
+  margin-bottom: 0px;
+}
+
+#contact-page .contact-mobile .contact-list-box .title {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  color: #646464;
+}
+
+#contact-page .contact-mobile .contact-list-box .meta-data p {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  color: #646464;
+  margin-bottom: 5px;
+}
+
+#contact-page .contact-mobile .contact-list-box .meta-data p i {
+  padding-right: 3px;
+}
+
+#contact-page .contact-mobile .contact-add-item {
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 10%;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: right;
+}
+
 body {
   background-color: #F1F5FA !important;
+}
+
+body .box {
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
 }
 
 body * {
@@ -497,5 +683,41 @@ body input.form-control:focus {
 
 body .small {
   font-size: 50%;
+}
+
+body .dataTables_wrapper .dataTables_length {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  padding: 10px;
+}
+
+body .dataTables_wrapper .dataTables_filter {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  padding: 10px;
+}
+
+body .dataTables_wrapper .dataTables_info {
+  padding: 10px;
+  font-family: 'Montserrat';
+  font-size: 12px;
+}
+
+body .dataTables_wrapper .dataTables_paginate {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  padding: 10px;
+}
+
+body .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background-color: #73CAC7;
+  border: none;
+  color: #fff !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#73CAC7), to(#73CAC7));
+  background: linear-gradient(to bottom, #73CAC7 0%, #73CAC7 100%);
+}
+
+body .dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border-color: #E8E8E8;
 }
 /*# sourceMappingURL=style.css.map */

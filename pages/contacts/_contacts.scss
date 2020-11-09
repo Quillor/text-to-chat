@@ -1,0 +1,157 @@
+#contact-page{
+
+    .contact-page-inner{
+        background: #F1F5FA;
+        border: 1px solid #E8E8E8;
+        box-shadow: 0px 0px 10px #D0DFF0;
+    }
+    .contact-desktop{
+        max-height: 85vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+        .contact-activity-option{
+            .contact-options{
+                background-color: $gray;
+                color:$darkgray;
+                font-size: 11px;
+                padding: 5px 9px ;
+                border-radius: 7px;
+                cursor: pointer;
+                &.active{
+                    background-color: $greenblue;
+                    color:$white;
+                }
+            }
+        }
+        .contact-add-item{
+            color:$white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        table{
+            tr{
+                th{
+                    font-weight: bold;
+                    font-size: 12px;
+                    border: none;
+                    color:$darkgray;
+                    vertical-align: middle;
+                    padding:10px 15px 10px 10px;
+                    select{
+                        font-weight: 300;
+                        font-size: 12px;
+                        background-color: $gray;
+                        color:$bgray;
+                        font-weight: 500;
+                    }
+                    i{
+                        color:$bgray;
+                        background-color: $gray;
+                        padding: 2px 4px;
+                        border-radius: 5px;
+                        width: 20px;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    border-bottom:1px solid $gray;
+                    &:first-child{
+                        border-top:1px solid $gray;
+                    }
+                    td{
+                        font-size: 12px;
+                        
+                        color:$darkgray;
+                      
+                        a{
+                            color:$darkgray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact-mobile{
+
+
+        .contact-activity-option{
+            .contact-options{
+                background-color: $gray;
+                color:$darkgray;
+                font-size: 11px;
+                padding: 5px 9px ;
+                border-radius: 7px;
+                cursor: pointer;
+                margin: 5px 0px;
+                text-align: center;
+                &.active{
+                    background-color: $greenblue;
+                    color:$white;
+                }
+            }
+        }
+        select{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            background-color: $gray;
+            color:$bgray;
+        }
+        .contact-list-box{
+            background: $white;
+            /* Border/1 */
+            margin:  20px;
+            padding: 10px 10px 20px;
+            border: 1px solid #E8E8E8;
+            box-shadow: 0px 0px 10px #D0DFF0;
+            border-radius: 12px;
+
+            .name{
+                font-family: 'Montserrat';
+                font-weight: bold;
+                font-size: 18px;
+                color:$darkgray;
+                margin-bottom: 0px;
+            }
+            .title{
+                font-family: 'Montserrat';
+                font-size: 12px;
+                color:$darkgray;
+            }
+            .meta-data{
+                p{
+                    font-family: 'Montserrat';
+                    font-size: 12px;
+                    color:$darkgray;
+                    margin-bottom: 5px;
+                    i{
+                        padding-right: 3px;
+                    }
+                }
+            }
+        }
+        .contact-add-item{
+            color:$white;
+            position: sticky;
+            bottom: 10%;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: right;
+        }
+    }
+}

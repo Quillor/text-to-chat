@@ -31,6 +31,9 @@ $yellow : #FCDE76;
 }
 
 .bg{
+    &-white{
+        background-color:$white;
+    }   
     &-yellow{
         background-color:$yellow;
     }

@@ -2,6 +2,7 @@
     li{
         a{
             transition: 0.4s all;
+            cursor: pointer;
             &:hover{
                 color:$greenblue;
             }
@@ -23,7 +24,7 @@ nav.desktop-nav{
                 color: $white;
                 font-weight: 200;
         
-                &.is-btn{
+                &.active{
                     background: $greenblue;
                     border-radius: 37px;    
                     min-width: 150px;
