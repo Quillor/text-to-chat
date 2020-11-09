@@ -1,6 +1,9 @@
 body {
     background-color: $lightgray !important;
 
+    .box{
+        transition: 0.4s all;
+    }
     & *{
         font-family: 'Montserrat', sans-serif;
     }
@@ -45,5 +48,40 @@ body {
     .small{
         font-size: 50%;
     }
+    .dataTables_wrapper {
+        .dataTables_length {
+            font-family: 'Montserrat';
+            font-size: 12px;
+            padding: 10px;
+        }
+        .dataTables_filter{
+            font-family: 'Montserrat';
+            font-size: 12px;
+            padding: 10px;
+        }
+        .dataTables_info {
+            padding: 10px;
+            font-family: 'Montserrat';
+            font-size: 12px;
+        }
+        .dataTables_paginate {
+            font-family: 'Montserrat';
+            font-size: 12px;
+            padding: 10px;
+            .paginate_button.current{
+                background-color: $greenblue;
+                border: none;
+                color:$white !important;
+                background: linear-gradient(to bottom, $greenblue 0%, $greenblue 100%);
+            }
+        }
+        .bottom {
+            
+        }
+    }
+    .dataTables_wrapper.no-footer .dataTables_scrollBody{
+        border-color:$gray;
+    }
+
 }
 
