@@ -1,87 +1,9 @@
-body {
-    background-color: $lightgray !important;
+#settings-page{
 
-    .box{
-        transition: 0.4s all;
-    }
-    & *{
-        font-family: 'Montserrat', sans-serif;
-    }
-    .fa, .fab, .fad, .fal, .far, .fas{
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-    }
-    .bold{
-        font-weight: bold;
-    }
-    .border{
-        border-color:$gray !important;
+    .settings-page-inner{
 
-        @media (min-width: 768px){
-            &-md{
-                border: 1px  solid $gray;
-                &-right{
-                    border-right: 1px  solid $gray;
-                }
-                &-left{
-                    border-left: 1px  solid $gray;
-                }
-                &-bottom{
-                    border-bottom: 1px  solid $gray;
-                }
-                &-top{
-                    border-top: 1px  solid $gray;
-                }
-            }
-        }
-    }
-
-    input{
-        &.form-control{
-            color:$darkgray;
-            font-size: 12px;
-            &:focus{
-                box-shadow: 0 0 0 0rem #f0f0f040;
-            }
-        }
-    }
-    .small{
-        font-size: 50%;
-    }
-    .dataTables_wrapper {
-        .dataTables_length {
-            font-family: 'Montserrat';
-            font-size: 12px;
-            padding: 10px;
-        }
-        .dataTables_filter{
-            font-family: 'Montserrat';
-            font-size: 12px;
-            padding: 10px;
-        }
-        .dataTables_info {
-            padding: 10px;
-            font-family: 'Montserrat';
-            font-size: 12px;
-        }
-        .dataTables_paginate {
-            font-family: 'Montserrat';
-            font-size: 12px;
-            padding: 10px;
-            .paginate_button.current{
-                background-color: $greenblue;
-                border: none;
-                color:$white !important;
-                background: linear-gradient(to bottom, $greenblue 0%, $greenblue 100%);
-            }
-        }
-        .bottom {
+        .settings-desktop{
             
         }
     }
-    .dataTables_wrapper.no-footer .dataTables_scrollBody{
-        border-color:$gray;
-    }
-
 }
-

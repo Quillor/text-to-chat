@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
+.color-black {
+  color: #000;
+}
+
 .color-yellow {
   color: #FCDE76;
 }
@@ -178,6 +182,9 @@ nav.desktop-nav .navbar-toggler-icon {
   #messages-page .messages-page-inner .messages-col-block {
     margin-bottom: 100px;
   }
+  #messages-page .messages-page-inner .messages-col-block.main-inbox-block-list {
+    margin-bottom: 0px;
+  }
   #messages-page .messages-page-inner .messages-col-block.main-inbox-block-list .inbox-options {
     -ms-flex: 1 1 auto !important;
     -webkit-box-flex: 1 !important;
@@ -203,19 +210,14 @@ nav.desktop-nav .navbar-toggler-icon {
 #messages-page .messages-page-inner .inbox-messages-block {
   overflow-x: hidden;
   overflow-y: auto;
-  height: 100%;
+  height: 70%;
   padding-bottom: 50px;
 }
 
 @media (min-width: 769px) {
   #messages-page .messages-page-inner .inbox-messages-block {
     padding-bottom: 200px;
-  }
-}
-
-@media (max-width: 768px) {
-  #messages-page .messages-page-inner .inbox-messages-block {
-    height: 70%;
+    height: 90%;
   }
 }
 
@@ -279,7 +281,7 @@ nav.desktop-nav .navbar-toggler-icon {
 @media (min-width: 768px) {
   #messages-page .floating-message-block {
     position: absolute;
-    bottom: -80px;
+    bottom: 1px;
     padding-left: 80%;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -304,18 +306,6 @@ nav.desktop-nav .navbar-toggler-icon {
   -webkit-box-shadow: 0px 0px 10px #D0DFF0;
           box-shadow: 0px 0px 10px #D0DFF0;
   cursor: pointer;
-}
-
-#messages-page .box-icon {
-  border-radius: 7px;
-  background-color: #E8E8E8;
-  padding: 3px 6px 1px;
-  cursor: pointer;
-}
-
-#messages-page .box-icon i {
-  font-size: 24px;
-  color: #979797;
 }
 
 #messages-page .message-body {
@@ -409,17 +399,6 @@ nav.desktop-nav .navbar-toggler-icon {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-
-#messages-page .message-details-block .edit-message-block .edit-message-details {
-  font-size: 12px;
-  border: none;
-  padding: 5px 25px 5px 25px;
-  border-radius: 7px;
-  cursor: pointer;
-  color: #646464;
-  background-color: #E8E8E8;
-  margin: 10px 0px 30px;
 }
 
 #messages-page .message-details-block .message-owner-details .meta-message-details label {
@@ -671,6 +650,29 @@ body .border {
   }
 }
 
+body .btn.btn-custom-secondary {
+  font-size: 12px;
+  border: none;
+  padding: 5px 25px 5px 25px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #646464;
+  background-color: #E8E8E8;
+  margin: 10px 0px 30px;
+}
+
+body .box-icon {
+  border-radius: 7px;
+  background-color: #E8E8E8;
+  padding: 3px 6px 1px;
+  cursor: pointer;
+}
+
+body .box-icon i {
+  font-size: 24px;
+  color: #979797;
+}
+
 body input.form-control {
   color: #646464;
   font-size: 12px;
@@ -679,6 +681,18 @@ body input.form-control {
 body input.form-control:focus {
   -webkit-box-shadow: 0 0 0 0rem #f0f0f040;
           box-shadow: 0 0 0 0rem #f0f0f040;
+}
+
+body input.form-control:disabled {
+  border: none;
+  background: transparent;
+  color: #000;
+}
+
+body input:disabled {
+  border: none;
+  background: transparent;
+  color: #000;
 }
 
 body .small {

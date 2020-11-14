@@ -10,6 +10,9 @@ $yellow : #FCDE76;
 
 
 .color{
+    &-black{
+        color:$black;
+    }
     &-yellow{
         color:$yellow;
     }

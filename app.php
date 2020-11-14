@@ -9,7 +9,7 @@ echo '<div id="box"></div>';
 
     <script>
         $(document).ready(function() {
-            $("#box").load("pages/contacts/contacts.php");
+            $("#box").load("pages/settings/settings.php");
             $(".navbar li a").click(function(e) {
                 e.preventDefault();
                 $(".navbar li a").removeClass("active");
@@ -24,6 +24,9 @@ echo '<div id="box"></div>';
             }
             else if(url==="Messages"){
                     $("#box").load("pages/messages/messages.php");
+            }
+            else{
+                $("#box").load("pages/settings/settings.php");
             }
         }
     </script>

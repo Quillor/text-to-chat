@@ -20,7 +20,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" onclick="myFunction('Settings')">
         <i class="fal fa-user-circle"></i> Acccount </a>
       </li>
       <!--<li class="nav-item dropdown">
