@@ -63,7 +63,7 @@
 
                 <div class="col-md-3 border-md-left messages-col-block message-details-block">
                     <div class="edit-message-block">
-                        <button class="edit-message-details">Edit</button>
+                        <button class="edit-message-details btn-custom-secondary btn">Edit</button>
                     </div>
                     <div class="message-owner-details">
                         <div class="meta-message-details phone">
