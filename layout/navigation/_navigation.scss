@@ -1,3 +1,4 @@
+// General Navbar
 .navbar{
     li{
         a{
@@ -10,6 +11,7 @@
     }
 }
 
+// Desktop Navbar
 nav.desktop-nav{
     background: $navyblue;
     margin-bottom: 0px !important;
@@ -23,10 +25,10 @@ nav.desktop-nav{
                 font-size: 18px;
                 color: $white;
                 font-weight: 200;
-        
+
                 &.active{
                     background: $greenblue;
-                    border-radius: 37px;    
+                    border-radius: 37px;
                     min-width: 150px;
                     text-align: center;
 
@@ -45,6 +47,11 @@ nav.desktop-nav{
         color:$black;
     }
 }
+
+
+
+
+// Mobile Navbar
 .bottom-navigation{
     background: $navyblue;
     position: sticky;

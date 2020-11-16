@@ -1,3 +1,4 @@
+                        <!-- Component: Message:Unread -->
                         <div class="inbox-messages-block-list mx-1 new">
                             <div class="d-flex align-items-center pt-2">
                                 <div class="">
@@ -17,6 +18,7 @@
                             </div>
                         </div>
 
+                        <!-- Component: Message:Active -->
                         <div class="inbox-messages-block-list mx-1 active">
                             <div class="d-flex align-items-center pt-2">
                                 <div class="">
@@ -35,7 +37,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!-- Component: Message:Starred -->
                         <div class="inbox-messages-block-list mx-1 star read">
                             <div class="d-flex align-items-center pt-2">
                                 <div class="">
@@ -55,7 +57,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!-- Component: Message:Read -->
                         <div class="inbox-messages-block-list mx-1 read">
                             <div class="d-flex align-items-center pt-2">
                                 <div class="">
@@ -74,8 +76,8 @@
                                 </div>
                             </div>
                         </div>
-                        
 
+                        <!-- Component: Message:Starred,Read -->
                         <div class="inbox-messages-block-list mx-1 star read">
                             <div class="d-flex align-items-center pt-2">
                                 <div class="">
@@ -94,6 +96,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Component: Message:Read -->
                         <div class="inbox-messages-block-list mx-1 read">
                             <div class="d-flex align-items-center pt-2">
                                 <div class="">

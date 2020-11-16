@@ -6,7 +6,7 @@ echo '<div id="box"></div>';
 //include "pages/messages/messages.php";
 //include "pages/contacts/contacts.php";?>
 
-
+<!-- This is for routes and navigation logic  -->
     <script>
         $(document).ready(function() {
             $("#box").load("pages/settings/settings.php");

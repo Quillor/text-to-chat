@@ -4,9 +4,12 @@ body {
     .box{
         transition: 0.4s all;
     }
+
+    // Typography
     & *{
         font-family: 'Montserrat', sans-serif;
-    }
+
+
     .fa, .fab, .fad, .fal, .far, .fas{
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
@@ -14,6 +17,11 @@ body {
     .bold{
         font-weight: bold;
     }
+    .small{
+        font-size: 50%;
+    }
+
+    // Borders
     .border{
         border-color:$gray !important;
 
@@ -35,6 +43,8 @@ body {
             }
         }
     }
+
+    // Buttons
     .btn{
         &.btn-custom-secondary{
             font-size: 12px;
@@ -59,6 +69,7 @@ body {
         }
     }
 
+    // Inputs
     input{
         &.form-control{
             color:$darkgray;
@@ -77,11 +88,10 @@ body {
             background: transparent;
             color: #000;
         }
-        
+
     }
-    .small{
-        font-size: 50%;
-    }
+
+    // Tables
     .dataTables_wrapper {
         .dataTables_length {
             font-family: 'Montserrat';
@@ -110,7 +120,7 @@ body {
             }
         }
         .bottom {
-            
+
         }
     }
     .dataTables_wrapper.no-footer .dataTables_scrollBody{
@@ -118,4 +128,3 @@ body {
     }
 
 }
-

@@ -1,5 +1,6 @@
 <div class="contact-mobile  pt-3 ">
    <div class="px-3  mx-0">
+     <!-- Component:SearchSortForm -->
         <form class="px-0 d-block">
             <div class="row px-0 ">
                 <div class="col-8 pr-1">
@@ -17,6 +18,7 @@
                 </div>
             </div>
         </form>
+        <!-- Component:SubNavMenu -->
         <div class="d-flex contact-activity-option  flex-wrap">
             <div class="contact-options active mx-1 ">All</div>
             <div class="contact-options mx-1 ">Unread</div>
@@ -26,8 +28,9 @@
         </div>
    </div>
    <div class="mt-4 pb-5">
-        <?php
-        for($i = 1; $i < 10; $i++){ ?>
+        <!-- Create 10 placeholders -->
+        <?php for($i = 1; $i < 10; $i++){ ?>
+        <!-- Component:ContactListBox -->
         <div class="contact-list-box">
             <p class="name">Mott Cotter</p>
             <p class="title">CTO, Co-Founder</p>
@@ -50,6 +53,7 @@
         </div>
         <?php } ?>
    </div>
+   <!-- Component:FloatingActionButton:Contacts -->
    <div class=" bg-greenblue rounded-circle contact-add-item">
         <i class="fas fa-user-plus"></i>
     </div>

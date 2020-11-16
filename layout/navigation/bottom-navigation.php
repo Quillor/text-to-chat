@@ -1,15 +1,19 @@
+<!-- Component:MobileNavbar -->
 <div class="mobile-nav navbar py-0 bottom-navigation">
-    <ul class="navbar-nav ml-auto">   
+    <ul class="navbar-nav ml-auto">
+        <!-- Component:NavItem:Mobile:Inactive -->
         <li class="nav-item  flex-fill" >
             <a class="nav-link " onclick="myFunction('Contacts')">
             <i class="fal fa-users"></i> <span class="">Contacts</span>
             </a>
         </li>
+        <!-- Component:NavItem:Mobile:Active -->
         <li class="nav-item flex-fill active">
             <a class="nav-link is-btn" onclick="myFunction('Messages')">
                 <i class="fas fa-comment"></i> <span class="">Messages</span>
             </a>
         </li>
+        <!-- Component:NavItem:Mobile:Inactive -->
         <li class="nav-item flex-fill">
             <a class="nav-link" onclick="myFunction('Settings')">
             <i class="far fa-cog"></i> <span class="">Settings </span></a>

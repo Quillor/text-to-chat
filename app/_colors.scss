@@ -1,3 +1,4 @@
+// Color Variables
 $white : #fff;
 $black : #000;
 $navyblue : #2D3F54;
@@ -8,7 +9,7 @@ $bgray : #979797;
 $lightgray : #F1F5FA;
 $yellow : #FCDE76;
 
-
+// Text Color
 .color{
     &-black{
         color:$black;
@@ -32,11 +33,11 @@ $yellow : #FCDE76;
         color:$lightgray;
     }
 }
-
+// Backgrounds
 .bg{
     &-white{
         background-color:$white;
-    }   
+    }
     &-yellow{
         background-color:$yellow;
     }
@@ -51,6 +52,12 @@ $yellow : #FCDE76;
     }
     &-darkgray{
         background-color:$darkgray;
+    }
+    &-navyblue{
+        background-color:$navyblue;
+        // &-light{
+        //   background-color: lighten($navyblue, 20%);
+        // }
     }
     &-lightgray{
         background-color:$lightgray;

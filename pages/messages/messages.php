@@ -5,13 +5,14 @@
             <div class="row d-flex mx-0 px-0">
 
                 <div class="col-md-3 border-md-right px-0  py-3 messages-col-block main-inbox-block-list">
-
+                    <!-- Component:SearchForm -->
                     <form class="px-3">
                         <div class="form-group border rounded-pill pl-2 pr-3 py-0 d-flex align-items-center">
                         <i class="fal fa-search color-bgray"></i><input type="input" class="form-control border-0 py-0 px-0 pl-2" id="search" aria-describedby="" placeholder="Search">
                         </div>
                     </form>
 
+                    <!-- Component:SubNavMenu -->
                     <div class="d-flex flex-wrap mb-2 px-3 inbox-message-status">
                         <div class="inbox-options active mx-1 mb-2">All</div>
                         <div class="inbox-options mx-1 mb-2">Unread</div>
@@ -22,7 +23,8 @@
                     <div class="inbox-messages-block">
                         <?php include "inbox-list.php" ?>
                     </div>
-                    
+
+                    <!-- Component:FloatingActionButton -->
                     <div class="floating-message-block">
                         <div class="floating-message">
                             <i class="fas fa-comment"></i>
