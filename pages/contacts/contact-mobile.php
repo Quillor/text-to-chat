@@ -29,29 +29,37 @@
    </div>
    <div class="mt-4 pb-5">
         <!-- Create 10 placeholders -->
-        <?php for($i = 1; $i < 10; $i++){ ?>
-        <!-- Component:ContactListBox -->
-        <div class="contact-list-box">
-            <p class="name">Mott Cotter</p>
-            <p class="title">CTO, Co-Founder</p>
-            <div class="row meta-data">
-                <div class="col-6">
-                    <p class="location"><i class="fas fa-map-marker"></i> Raleigh, NC</p>
+        
+        <?php 
+       
+        if($data === 'empty'){
+
+        }
+        else{
+            for($i = 1; $i < 10; $i++){ ?>
+            <!-- Component:ContactListBox -->
+            <div class="contact-list-box">
+                <p class="name">Mott Cotter</p>
+                <p class="title">CTO, Co-Founder</p>
+                <div class="row meta-data">
+                    <div class="col-6">
+                        <p class="location"><i class="fas fa-map-marker"></i> Raleigh, NC</p>
+                    </div>
+                    <div class="col-6">
+                        <p class="company"><i class="far fa-building"></i> EmployUs</p>
+                    </div>
                 </div>
-                <div class="col-6">
-                    <p class="company"><i class="far fa-building"></i> EmployUs</p>
+                <div class="row meta-data">
+                    <div class="col-6">
+                        <p class="phone"><i class="far fa-phone"></i> 123-123-1234</p>
+                    </div>
+                    <div class="col-6">
+                        <p class="email"><i class="fas fa-envelope"></i> matt@email.com</p>
+                    </div>
                 </div>
             </div>
-            <div class="row meta-data">
-                <div class="col-6">
-                    <p class="phone"><i class="far fa-phone"></i> 123-123-1234</p>
-                </div>
-                <div class="col-6">
-                    <p class="email"><i class="fas fa-envelope"></i> matt@email.com</p>
-                </div>
-            </div>
-        </div>
-        <?php } ?>
+        <?php }
+        } ?>
    </div>
    <!-- Component:FloatingActionButton:Contacts -->
    <div class=" bg-greenblue rounded-circle contact-add-item">

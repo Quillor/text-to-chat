@@ -8,58 +8,67 @@ $darkgray : #646464;
 $bgray : #979797;
 $lightgray : #F1F5FA;
 $yellow : #FCDE76;
-
+$red : #FF9696;
 // Text Color
 .color{
+    &-white{
+        color:$white !important;
+    }
     &-black{
-        color:$black;
+        color:$black !important;
     }
     &-yellow{
-        color:$yellow;
+        color:$yellow !important;
     }
     &-greenblue{
-        color:$greenblue;
+        color:$greenblue !important; 
     }
     &-gray{
-        color:$gray;
+        color:$gray !important;
     }
     &-bgray{
-        color:$bgray;
+        color:$bgray !important;
     }
     &-darkgray{
-        color:$darkgray;
+        color:$darkgray !important;
     }
     &-lightgray{
-        color:$lightgray;
+        color:$lightgray !important;
+    }
+    &-red{
+        color:$red !important;
     }
 }
 // Backgrounds
 .bg{
     &-white{
-        background-color:$white;
+        background-color:$white !important;
     }
     &-yellow{
-        background-color:$yellow;
+        background-color:$yellow !important;
     }
     &-greenblue{
-        background-color:$greenblue;
+        background-color:$greenblue !important;
     }
     &-gray{
-        background-color:$gray;
+        background-color:$gray !important;
     }
     &-bgray{
-        background-color:$bgray;
+        background-color:$bgray !important;
     }
     &-darkgray{
-        background-color:$darkgray;
+        background-color:$darkgray !important;
+    }
+    &-red{
+        background-color:$red !important;
     }
     &-navyblue{
-        background-color:$navyblue;
+        background-color:$navyblue !important;
         // &-light{
         //   background-color: lighten($navyblue, 20%);
         // }
     }
     &-lightgray{
-        background-color:$lightgray;
+        background-color:$lightgray !important;
     }
 }

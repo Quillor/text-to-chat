@@ -3,12 +3,12 @@
        {
            "format": "expanded",
            "extensionName": ".css",
-           "savePath": "/src/assets/stylesheets/css"
+           "savePath": "src/assets/stylesheets/css"
        },
        {
            "extensionName": ".min.css",
            "format": "compressed",
-           "savePath": "/src/assets/stylesheets/min"
+           "savePath": "src/assets/stylesheets/min"
        }
    ],
    "liveSassCompile.settings.excludeList": [
