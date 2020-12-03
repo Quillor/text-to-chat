@@ -25,17 +25,17 @@
       </li>
 
       <li class="nav-item ">
-        <a class="nav-link active"  onclick="myFunction('Contacts')">
+        <a class="nav-link <?php echo ($page == 'contacts' || $page == '') ? 'active':''; ?>"  href="?url=contacts" >
           <i class="fal fa-users"></i> <span class="">Contacts</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link"  onclick="myFunction('Messages')">
+        <a class="nav-link <?php echo ($page == 'messages') ? 'active':''; ?>" href="?url=messages">
             <i class="fas fa-comment"></i> <span class="">Messages</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" onclick="myFunction('Settings')">
+        <a class="nav-link <?php echo ($page == 'settings') ? 'active':''; ?>" href="?url=settings" >
         <i class="fal fa-user-circle"></i> Acccount </a>
       </li>
       <!-- DRAFT:Dropdown idea -->

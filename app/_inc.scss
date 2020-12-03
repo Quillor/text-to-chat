@@ -8,7 +8,7 @@ body {
     // Typography
     & *{
         font-family: 'Montserrat', sans-serif;
-
+    }
 
     .fa, .fab, .fad, .fal, .far, .fas{
         font-family: "Font Awesome 5 Free";
@@ -46,6 +46,7 @@ body {
 
     // Buttons
     .btn{
+        transition: 0.4s all;
         &.btn-custom-secondary{
             font-size: 12px;
             border: none;
@@ -55,6 +56,10 @@ body {
             color: $darkgray;
             background-color: $gray;
             margin:10px 0px 30px;
+        }
+
+        &:hover{
+            opacity: 0.8;
         }
     }
 
@@ -69,6 +74,14 @@ body {
         }
     }
 
+    //group
+
+    .form-custom-group {
+
+        &.active{
+            border-bottom: 1px solid #A0A0A0;
+        }
+    }
     // Inputs
     input{
         &.form-control{
@@ -89,6 +102,22 @@ body {
             color: #000;
         }
 
+        &:not([disabled]){
+            border: none;
+           // border-bottom: 1px solid #A0A0A0;
+        }
+        &:focus{
+            border:none;
+            outline: none;
+        }
+        &:active{
+            border:none;
+            outline: none;
+        }
+    }
+
+    .save, .cancel {
+        display:none;
     }
 
     // Tables
@@ -127,4 +156,7 @@ body {
         border-color:$gray;
     }
 
+    .flex-direction-column{
+        flex-direction: column;
+    }
 }

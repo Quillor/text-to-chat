@@ -44,21 +44,26 @@
             </thead>
             <tbody>
                <?php
-                  for ($i = 0;$i < 20;$i++)
-                  { ?>
-               <tr>
-                  <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
-                  <td class=""><i class="fas fa-star  <?php echo $x = $i == 1 ? "color-yellow" : ""; ?>"></i></td>
-                  <td><?php echo $i;?> Mott Cotter</td>
-                  <td><?php echo $i;?> Raleigh, NC</td>
-                  <td><?php echo $i;?>  <?php echo $x = $i == 1 ? "Quillor" : "Employus"; ?></td>
-                  <td><?php echo $i;?> CTO, Co-Founder</td>
-                  <td><?php echo $i;?> 123-123-1234</td>
-                  <td><a href="mailto:Matt@employus.com">Matt@employus.com</a></td>
-                  <td><?php echo $i;?> Jan 1</td>
-                  <td></td>
-               </tr>
-               <?php
+                  if($data === 'empty'){
+
+                  }
+                  else{
+                     for ($i = 0;$i < 20;$i++)
+                     { ?>
+                     <tr>
+                        <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                        <td class=""><i class="fas fa-star  <?php echo $x = $i == 1 ? "color-yellow" : ""; ?>"></i></td>
+                        <td><?php echo $i;?> Mott Cotter</td>
+                        <td><?php echo $i;?> Raleigh, NC</td>
+                        <td><?php echo $i;?>  <?php echo $x = $i == 1 ? "Quillor" : "Employus"; ?></td>
+                        <td><?php echo $i;?> CTO, Co-Founder</td>
+                        <td><?php echo $i;?> 123-123-1234</td>
+                        <td><a href="mailto:Matt@employus.com">Matt@employus.com</a></td>
+                        <td><?php echo $i;?> Jan 1</td>
+                        <td></td>
+                     </tr>
+                  <?php
+                     }
                   }
                   ?>
             </tbody>

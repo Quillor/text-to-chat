@@ -1,3 +1,9 @@
+<?php 
+$data = 'notempty';
+if (isset($_GET['contacts'])) {
+    $data = $_GET['contacts'];
+}
+?>
 <div id="contact-page" class="">
     <div class="container contact-page-inner px-0  bg-white">
         <div class="px-3 py-2"><h1 class="bold mb-0">Contacts</h1></div>
